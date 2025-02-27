@@ -1,65 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Krishnan's Portfolio - Full Stack Developer">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Krishnan's Portfolio - Full Stack Developer"
+    />
     <title>Portfolio | Krishnan</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <h2 class="logo">Portfolio
-            <span>website</span>
-        </h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+      <nav class="navbar navbar-light bg-light navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <section class="home">
-        <div class="content">
-            <h1>Hi, I'm <span>Krishnan</span></h1>
-            <p>I'm a passionate web developer who focuses on building clean, optimized, and efficient websites.</p>
-            <a href="#" class="btn">Let's Start</a>
-        </div>
+    <section class="home d-flex align-items-center justify-content-center text-center text-white vh-100" style="background: url('images/IMG_8895\ \(1\)-1.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto bg-dark p-4 rounded">
+                    <h1>Hi, I'm <span class="text-warning">Krishnan</span></h1>
+                    <p>I'm a passionate web developer who focuses on building clean, optimized, and efficient websites.</p>
+                    <a href="#" class="btn btn-primary">Let's Start</a>
+                </div>
+            </div>
     </section>
 
-    <section class="about">
-        <img src="images/2.jpg" alt="Krishnan's Profile Picture">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>I am a java developer.i can provide clean code with efficient performance. And also i have knowledge of web development and also i have knowledge of data structure and algorithm and SQL analyst adept at developing complex SQL queries to extract, manipulate, and analyze large datasets. . i am always enthusiastic in learning new things to develop my career aspiration.</p>
-            <a href="#" class="btn">More About Me</a>
-        </div>
-    </section>
-
-    <section class="services">
-        <h2>My Services</h2>
-        <div class="service-container">
-            <div class="service-box">
-                <h3>Frontend Development</h3>
-                <p>Building responsive and interactive user interfaces with modern technologies like React, Ember.js, and Vue.</p>
-            </div>
-            <div class="service-box">
-                <h3>Backend Development</h3>
-                <p>Developing secure and scalable backend systems using Node.js, Express, and databases like MySQL.</p>
-            </div>
-            <div class="service-box">
-                <h3>Full Stack Development</h3>
-                <p>Creating complete web applications by integrating frontend and backend technologies efficiently.</p>
+    <section class="about bg-light vh-100 d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="images/2.jpg" class="img-fluid rounded w-75" alt="Krishnan">
+                </div>
+                <div class="col-md-8 px-5">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a Java developer. I provide clean code with efficient performance. 
+                        I have knowledge of web development, data structures, algorithms, and SQL analysis. 
+                        Always eager to learn new technologies and improve my skills.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary">More About Me</a>
+                </div>
             </div>
         </div>
     </section>
+    
+    
+    <section class="services py-5  bg-light">
+        <div class="container text-center">
+            <h2 class="text-primary">My Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-primary shadow-sm p-3 my-3">
+                        <h3>Frontend Development</h3>
+                        <p>Building responsive UI with  Ember and JS</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-primary shadow-sm p-3 my-3">
+                        <h3>Backend Development</h3>
+                        <p>Secure APIs using Node.js </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-primary shadow-sm p-3 my-3">
+                        <h3>Full Stack Development</h3>
+                        <p>Complete web apps with frontend & backend.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>© 2025 Krishnan | All Rights Reserved</p>
     </footer>
-</body>
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
 </html>
